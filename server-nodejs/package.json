@@ -1,0 +1,26 @@
+{
+  "name": "spa",
+  "version": "1.0.0",
+  "description": "single-page application smart led light",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.mjs"
+  },
+  "author": "Oscar Lira Gonzalez",
+  "license": "MIT",
+  "dependencies": {
+    "arangojs": "^7.2.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jwt-simple": "^0.5.6",
+    "log4js": "^6.3.0",
+    "moment": "^2.29.1",
+    "mqtt": "^4.2.6",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

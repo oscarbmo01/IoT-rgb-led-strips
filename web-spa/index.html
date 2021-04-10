@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <h1>Edit RGB LED Strip Values</h1>
+
+    <ul id="ul-list-rgb-led-strip" class="ul-list-strip-light">
+        <li class="li-strip-light li-strip-light-key"><span>No:</span><span>id</span><span>room</span><span>installation description</span><span>color</span></li>
+    </ul>
+
+    <form id="form-edit-value-strip-light">
+        <h2>Edit values</h2>
+        <div class="div-edit-value-strip-light">
+            <input type="hidden" name="_key" id="_key">
+            <div>
+                <label for="room">room</label>
+                <input type="text" name="room" id="room">
+            </div>
+            <div>
+                <label for="installation-description">installation description</label>
+                <input type="text" name="installation-description" id="installation-description">
+            </div>
+            <div>
+                <label for="color">color</label>
+                <input type="color" value="#303030" name="color" id="color">
+            </div>
+        </div>
+        <input id="input-form-edit-value-strip-light" type="submit" value="Save values">
+    </form>
+
+    <div id="div-options" class="div-options">
+        <div class="div-container-options">
+            <a id="logout" href="http://localhost:3000/logout">close session</a>
+            <span id="span-more-options" class="icon-plus"></span>
+        </div>
+        <div class="div-container-options">
+            <form id="formDeleteUser">
+                <label for="password">Delete user</label>
+                <input type="password" name="password" id="password" autocomplete="on" placeholder="confirm password" required>
+                <input type="submit" value="Agree">
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/updateStripLed.js"></script>
+    <script type="module" src="./js/deleteUser.js"></script>
+    <script src="./js/handlebars.js"></script>
+</body>
+</html>

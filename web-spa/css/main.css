@@ -1,0 +1,92 @@
+@import url('font.css');
+@import url('icomoon.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Heebo";
+}
+
+
+.div-main-container {
+    width: 90%;
+    max-width: 500px;
+    min-width: 300px;
+    margin-top: 100px;
+}
+    .div-h1-mc {
+        padding: 20px 0px 20px 0px;
+        font-size: 15px;
+        color: rgba(216, 91, 19, 0.8);
+    }
+    .div-group-h2-mc {
+        padding: 20px 0px 20px 0px;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    .div-form-mc {
+        padding: 20px 0px 20px 0px;
+    }
+        .div-group-label-input-mc {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0px 10px 0px;
+        }
+            .label-mc {
+                font-size: 18px;
+                color: rgba(0, 0, 0, 0.7);
+            }
+            .input-mc {
+                outline: none;
+                border-style: none;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+                font-size: 22px;
+                color: rgb(61, 60, 95);
+            }
+        .div-group-input-a-mc {
+            padding: 10px 0px 10px 0px;
+        }
+            .div-input-submit-mc input {
+                outline: none;
+                width: 100%;
+                padding: 10px 0px 10px 0px;
+                margin: 35px 0px 20px 0px;
+                border-style: none;
+                border-radius: 4px;
+                background-color: rgb(216, 91, 19, 0.8);
+                font-size: 20px;
+                color: rgb(255, 255, 255);
+            }
+            .div-input-submit-mc input:hover {
+                cursor: pointer;
+                background-color: rgb(216, 91, 19, 0.9);
+            }
+            .div-input-submit-mc input:active {
+                background-color: rgb(216, 91, 19, 1);
+            }
+            .div-a-link-mc {
+                padding: 10px 0px 10px 0px;
+                margin: 35px 0px 20px 0px;
+                background-color: rgb(206, 206, 206);
+            }
+            .div-a-link-mc a {
+                display: block;
+                text-align: right;
+                text-decoration: none;
+                color: rgba(133, 20, 0, 0.7);
+                padding-right: 10px;
+            }
+            .div-a-link-mc a:hover {
+                color: rgba(133, 20, 0, 0.85);
+            }
+            .div-a-link-mc a:active {
+                color: rgba(133, 20, 0, 1);
+            }

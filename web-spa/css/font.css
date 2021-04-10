@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Lato Light";
+    src: url("../fnt/Lato/Lato-Light.ttf");
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Heebo";
+    src: url("../fnt/Heebo/Heebo-VariableFont_wght.ttf");
+    font-display: block;
+}

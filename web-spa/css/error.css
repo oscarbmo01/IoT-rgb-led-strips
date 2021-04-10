@@ -1,0 +1,17 @@
+@import url('font.css');
+@import url('icomoon.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    padding-top: 100px;
+    font-family: "Heebo";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
