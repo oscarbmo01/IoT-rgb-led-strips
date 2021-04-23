@@ -114,9 +114,9 @@ $ python3 nodemcu-1.py
 <img src="img-documentation/15.png" width="80%" title="Terminal emulathor nodemcu mqtt">
 
 ## Credits
-Eclipse Foundation https://www.eclipse.org/
-Diagrams https://app.diagrams.net/
-Mosquitto https://mosquitto.org/download/
+Eclipse Foundation https://www.eclipse.org/  
+Diagrams https://app.diagrams.net/  
+Mosquitto https://mosquitto.org/download/  
 ArangoDB https://www.arangodb.com/download-major/
 
 ## Licence
