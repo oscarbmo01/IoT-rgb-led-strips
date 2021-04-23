@@ -11,13 +11,12 @@ Control and configuration system for off, on and color of rgb led strip.
 * NoSQL
 * MQTT
 * JSON
-* TypeScript
-* Python
 * JavaScript
 * CSS
 * HTML
 * ArangoDB
 * Mosquitto
+* Python
 
 ## Getting Started
 
@@ -110,10 +109,6 @@ $ python3 nodemcu-1.py
 </pre>
 
 ### Documentation
-<img src="img-documentation/101.jpg" width="80%" title="Flowchart">
-<img src="img-documentation/102.jpg" width="80%" title="Flowchart">
-<img src="img-documentation/103.jpg" width="80%" title="Flowchart">
-<img src="img-documentation/104.jpg" width="80%" title="Flowchart">
 <img src="img-documentation/13.png" width="80%" title="Terminal Node.js server">
 <img src="img-documentation/03.png" width="80%" title="View index server frontend">
 <img src="img-documentation/15.png" width="80%" title="Terminal emulathor nodemcu mqtt">
