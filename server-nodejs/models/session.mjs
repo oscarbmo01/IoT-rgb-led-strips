@@ -25,7 +25,6 @@ function updateUsedStrip(req, res, next) {
         docs => {
             collection.update(docs[0]['_key'], { _keyUser: req.body._key }).then(
                 meta => {
-                    console.log(req.body._key);
                     console.log('Document updated:', meta._rev);
                     res.redirect(config.FRONTEND.INDEX);
                 },

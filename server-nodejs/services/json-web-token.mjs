@@ -3,11 +3,12 @@ import jwt from 'jwt-simple';
 import moment from 'moment';
 
 function encode(req, res, next) {
-    const payload = { alg: 'HS256',
-                    typ: 'JWT',
-                    sub: req.body._key,
-                    iat: moment().unix(),
-                    exp: null
+    const payload = { 
+        alg: 'HS256',
+        typ: 'JWT',
+        sub: req.body._key,
+        iat: moment().unix(),
+        exp: null
     };
     const token = jwt.encode(payload, config.SECRET);
     const options = {

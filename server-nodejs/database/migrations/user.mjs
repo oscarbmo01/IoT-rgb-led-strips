@@ -20,6 +20,5 @@ const schema = {
     }
 }
 
-
 db._create("schemaCollection", { "schema": schema });
 

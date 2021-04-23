@@ -1,11 +1,9 @@
 import validator from 'validator';
 import * as jwt from '../services/json-web-token.mjs';
 import * as config from '../config.mjs';
-import { writeLog } from '../log/logger.mjs';
 
 function login(req, res, next) {
     const nameLogger = 'controller', name = 'session', process = 'login';
-    writeLog({ nameLogger, name, process, msg: 'Start of the process', type: 'trace' });
 
     const email = validator.isEmail(req.body.email);
     const password = validator.isStrongPassword(req.body.password, { 
@@ -20,16 +18,13 @@ function login(req, res, next) {
     const paramUrl =  JSON.stringify({ email, password });
     if (bodyValidation) {
         next();
-        writeLog({ nameLogger, name, process, msg: `Execution successful>data: ${paramUrl}`, type: 'info' });
     } else {
         res.redirect(`${config.FRONTEND.LOGIN}?data=${paramUrl}`);
-        writeLog({ nameLogger, name, process, msg: `Execution unsuccessful>data: ${paramUrl}`, type: 'warn' });
     }
 }
 
 function logout(req, res, next) {
     const nameLogger = 'controller', name = 'session', process = 'logout';
-    writeLog({ nameLogger, name, process, msg: 'Start of the process', type: 'trace' });
 
     res.clearCookie('token');
     res.redirect(config.FRONTEND.LOGIN);
@@ -37,7 +32,6 @@ function logout(req, res, next) {
 
 function validate(req, res, next) {
     const nameLogger = 'controller', name = 'session', process = 'validate';
-    writeLog({ nameLogger, name, process, msg: 'Start of the process', type: 'trace' });
 
     let sessionStatus = undefined;
     if (req.cookies.token) {

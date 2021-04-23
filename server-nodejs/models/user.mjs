@@ -22,7 +22,6 @@ function read(req, res, next) {
     collection.document(req.body._key).then(
         doc => {
             console.log('Document:', JSON.stringify(doc, null, 2));
-            console.log('jake', doc.rgbLedStrip);
             doc.rgbLedStrip.map((strip) => {
                 client.publish(strip.topic, `{ "color": ${JSON.stringify(strip.color)} }`);
             });

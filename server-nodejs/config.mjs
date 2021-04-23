@@ -2,23 +2,16 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 const HOST = process.env.HOST || 'http://127.0.0.1';
 const PORT = process.env.PORT || 3000;
 const SECRET = process.env.SECRET || 'mal-igna';
+
 const DB = {
     HOST: process.env.HOST || 'http://localhost:8529',
     NAME: process.env.DB || 'IOTSTRIPRGBLED',
-    AUTH: {
-        USERNAME: 'root',
-        PASSWORD: 'bmo'
-    }
+    AUTH: { USERNAME: 'root', PASSWORD: 'bmo' }
 };
 
-const TOKEN = {
-    EXPIRES: 60
-};
+const TOKEN = { EXPIRES: 60 };
 
-const BROKER = {
-    HOST: 'mqtt://localhost',
-    PORT: 1883
-};
+const BROKER = { HOST: 'mqtt://localhost', PORT: 1883 };
 
 const FRONTEND = {
     INDEX: 'http://localhost:5501/index.html',
